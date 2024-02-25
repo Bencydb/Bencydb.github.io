@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+
+    <link rel = "stylesheet" href = "./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel = "stylesheet" href = "./content/app.css">
+
+</head>
+<body>
+<header>
+
+</header>
+
+<main class="container" id="services">
+    <video src = "images/harmonyhub_bgvideo.mp4" muted loop autoplay class = "back_video"></video>
+    <br>
+    <h2>Our Services</h2>
+    <br>
+    <div id="accordion" class="accordion">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="service1Heading">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#service1Collapse" aria-expanded="true" aria-controls="service1Collapse">
+                    <img src="images/service/service1.jpg" alt="service1">Community Classes
+                </button>
+            </h2>
+            <div id="service1Collapse" class="accordion-collapse collapse show" aria-labelledby="service1Heading" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                    <!-- Add details for Service 1 here -->
+                    <p>Explore a diverse range of classes designed to cater to different interests and skill levels.
+                        From art and music to coding and fitness, our community classes offer engaging learning
+                        experiences for everyone.</p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="service2Heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#service2Collapse" aria-expanded="false" aria-controls="service2Collapse">
+                    <img src="images/service/service2.jpg" alt="service2">Event Hosting
+                </button>
+            </h2>
+            <div id="service2Collapse" class="accordion-collapse collapse" aria-labelledby="service2Heading" data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <p>Host your events at Harmony Hub! Whether it's a community meetup, workshop, or special event,
+                        our state-of-the-art facilities are equipped to accommodate various gatherings. Let us help you
+                        bring your ideas to life.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="service3Heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#service3Collapse" aria-expanded="false" aria-controls="service3Collapse">
+                    <img src="images/service/service3.jpg" alt="service3"> Tech Support Hub
+                </button>
+            </h2>
+            <div id="service3Collapse" class="accordion-collapse collapse" aria-labelledby="service3Heading" data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <p>Need technical assistance? Our Tech Support Hub is here for you.
+                        Whether it's troubleshooting devices, software help, or digital literacy,
+                        our experts are ready to assist and empower you in the world of technology.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <nav id="footerNav" class="navbar navbar-dark  d-flex justify-content-center">
+    </nav>
+</footer>
+
+<!--<Scripting Section>-->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./script/app.js"></script>
+
+
+</body>
+</html>

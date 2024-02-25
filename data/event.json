@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Community Picnic",
+        "date": "2024-07-15",
+        "location": "Central Park",
+        "description": "Join us for a fun-filled picnic with games, food, and music!"
+    },
+    {
+        "title": "Tech Meetup",
+        "date": "2024-08-10",
+        "location": "Tech Hub",
+        "description": "A gathering of tech enthusiasts to discuss the latest trends and innovations."
+    }
+]

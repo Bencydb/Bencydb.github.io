@@ -6,73 +6,99 @@
 
     <link rel = "stylesheet" href = "./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel = "stylesheet" href = "./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel = "stylesheet" href = "content/app.css">
+    <link rel = "stylesheet" href = "./content/app.css">
 
 
 </head>
-<body>
+<body style="background-color:#fe914c ">
 <header>
-</header>
-<div class = "container">
-    <h1>Contact US</h1>
 
-    <div id="messageArea"></div>
+</header>
+
+<div class = "container">
+    <video src = "images/harmonyhub_bgvideo.mp4" muted loop autoplay class = "back_video"></video>
+    <br>
+    <h1>Contact Us</h1>
+    <br>
 
     <div class = "row justify-content-lg-center">
 
-        <form  class = "col-lg-6 col-md-4 col-sm-4">
+        <form  class = "col-lg-6 col-md-4 col-sm-4" id="contactForm">
             <div class="input-group mb-3">
                 <span class="input-group-text"> Full Name</span>
                 <input type="text" id="fullName" name="fullName"
-                       class="form-control"  aria-describedby="Full Name" aria-label="Full Name Input" required>
+                       class="form-control"  aria-describedby="Full Name" aria-label="Full Name Input" >
 
             </div>
 
-            <div class="input-group mb-3">
-                <span class="input-group-text"> Contact Number</span>
-                <input type="text" id="contactNumber" name="contactNumber"
-                       class="form-control"  aria-describedby="Contact Number" aria-label="Contact Number Input" required>
-
-            </div>
             <div class="input-group mb-3">
                 <span class="input-group-text"> Email Address</span>
                 <input type="email" id="emailAddress" name="emailAddress"
-                       class="form-control"  aria-describedby="Email Address" aria-label="Email Address Input" required>
+                       class="form-control"  aria-describedby="Email Address" aria-label="Email Address Input">
 
             </div>
 
             <div class="input-group mb-3">
-                <span class="input-group-text"> Your Message </span>
+                <span class="input-group-text"> Subject </span>
+                <input type="text" id="subject" name="subject"
+                       class="form-control"  aria-describedby="Subject" aria-label="Subject Input" >
+
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"> Message </span>
                 <input type="text" id="message" name="message"
-                       class="form-control"  aria-describedby="Your Message" aria-label="Your Message Input" required>
+                       class="form-control"  aria-describedby="Your Message" aria-label="Your Message Input" >
 
             </div>
 
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="subscribeCheckBox">
-                <label class="form-check-label" for="subscribeCheckBox">Subscribe to our Contact List</label>
-            </div>
 
             <button id="submitButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-envelope"></i>Submit</button>
             <button id = "cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-rotate"></i>Cancel</button>
 
         </form>
 
-        <div class="col-lg-4 col-md-4">
-            <a href ="contact_list.html" class="btn btn-primary"><i class="fa-solid fa-user"></i>Show Contact List</a>
+    </div>
+
+    <br>
+    <div>
+        <div id="our_info">
+            <h5>Our Information</h5>
+            <p><strong>Email:</strong> info@harmonyhub.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Address:</strong> 123 Main Street, Harmony City</p>
         </div>
 
     </div>
+    <br>
+    <form id="feedbackForm">
+        <label for="rating">Rate your experience:</label>
+        <select id="rating" name="rating">
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Poor</option>
+            <option value="1">1 - Very Poor</option>
+        </select><br>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit Feedback</button>
+    </form>
+    <br><br>
 
 
 </div>
 
+<footer>
+    <nav id="footerNav" class="navbar navbar-dark  d-flex justify-content-center">
+    </nav>
+</footer>
+
 <!--<Scripting Section>-->
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="scripts/namespace.js"></script>
-<script src="scripts/contact.js"></script>
-<script src="scripts/app.js"></script>
+<script src="./script/app.js"></script>
+
 
 </body>
 </html>

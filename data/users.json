@@ -3,22 +3,19 @@
 
     {
       "DisplayName" : "Bilbo Baggins",
-      "EmailAddress" : "bbaggins@example.com",
-      "Username" : "bbaggins",
+      "Username" : "bbaggins@example.com",
       "Password" : "123456"
     },
 
     {
       "DisplayName" : "Samwise Gamgee",
-      "EmailAddress" : "samwiseg@example.com",
-      "Username" : "sgamgee",
+      "Username" : "samwiseg@example.com",
       "Password" : "789097"
     },
 
     {
       "DisplayName" : "Admin",
-      "EmailAddress" : "admin@example.com",
-      "Username" : "admin",
+      "Username" : "admin@example.com",
       "Password" : "555555"
     }
   ]

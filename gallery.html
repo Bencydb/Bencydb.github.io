@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+
+    <link rel = "stylesheet" href = "./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel = "stylesheet" href = "./content/app.css">
+    <script src="./script/authguard.js"></script>
+
+</head>
+<body>
+<header>
+</header>
+
+<main class = "container">
+    <video src = "images/harmonyhub_bgvideo.mp4" muted loop autoplay class = "back_video"></video>
+    <h1>Gallery</h1>
+
+    <div id="messageArea"></div>
+
+
+    <div class="gallery">
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+</main>
+
+<footer>
+    <nav id="footerNav" class="navbar navbar-dark  d-flex justify-content-center">
+    </nav>
+</footer>
+
+
+<!--<Scripting Section>-->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./script/app.js"></script>
+
+
+</body>
+</html>

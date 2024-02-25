@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+
+    <link rel = "stylesheet" href = "./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel = "stylesheet" href = "./content/app.css">
+
+</head>
+<body>
+<header>
+
+</header>
+<main class = "container">
+    <video src = "images/harmonyhub_bgvideo.mp4" muted loop autoplay class = "back_video"></video>
+    <br>
+    <h2>Blogs</h2>
+    <br>
+    <input type="text" id="searchInput" placeholder="Enter text to search">
+    <button id="searchButton">Search</button>
+
+    <div id="searchResults"></div>
+    <!-- Article 1 -->
+    <div id="blog-container">
+        <article class="blog-article">
+            <h4>Exploring Harmony Hub's Community Classes</h4>
+            <p class="article-summary">Discover the diverse range of classes offered by Harmony Hub.
+                From art to coding, our community classes cater to different interests and skill levels.</p>
+            <a href="#" class="read-more-link">Read More</a>
+        </article>
+        <article class="blog-article">
+            <h4>Hosting Successful Events at Harmony Hub</h4>
+            <p class="article-summary">Learn how Harmony Hub's state-of-the-art facilities can make your
+                events memorable. From community meetups to workshops, we have you covered.</p>
+            <a href="#" class="read-more-link">Read More</a>
+        </article>
+        <article class="blog-article">
+            <h4>Tech Support Hub: Empowering You in the Digital World</h4>
+            <p class="article-summary">Get acquainted with Harmony Hub's Tech Support Hub. Our experts are ready to assist
+                with troubleshooting, software help, and digital literacy.</p>
+            <a href="#" class="read-more-link">Read More</a>
+        </article>
+    </div>
+</main>
+
+<footer>
+    <nav id="footerNav" class="navbar navbar-dark  d-flex justify-content-center">
+    </nav>
+</footer>
+
+<!--<Scripting Section>-->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./script/app.js"></script>
+
+
+</body>
+</html>
